@@ -1,0 +1,22 @@
+body {
+  background-image: url("../../images/back_mobile.jpg");
+  background-size: cover; }
+
+.mainContainer {
+  padding: 20px; }
+  .mainContainer .logo {
+    display: inline-block; }
+  .mainContainer .rounded, .mainContainer .form input {
+    border-radius: 1em; }
+  .mainContainer .form input {
+    box-sizing: border-box;
+    width: 100%; }
+
+@media (min-width: 700px) {
+  body {
+    background-image: url("../../images/back_tablets.jpg"); } }
+@media (min-width: 1200px) {
+  body {
+    background-image: url("../../images/back_desktop.jpg"); } }
+
+/*# sourceMappingURL=style.css.map */
