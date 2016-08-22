@@ -19,13 +19,16 @@ body {
     height: 115px;
     background-image: url("../../images/logo.png");
     background-size: 100% 100%;
-    margin-top: 30%; }
+    margin-top: 27%; }
   .mainContainer .rounded, .mainContainer .form input {
     border-radius: 28px; }
-  .mainContainer .form {
+  .mainContainer .wrapper {
     position: absolute;
     bottom: 10px;
-    padding: 12px; }
+    left: 0;
+    padding: 0 12px; }
+  .mainContainer .form {
+    width: 100%; }
     .mainContainer .form input {
       border: 0;
       height: 55px;
@@ -61,9 +64,22 @@ body {
 
 @media (min-width: 700px) {
   body {
-    background-image: url("../../images/back_tablets.jpg"); } }
+    background-image: url("../../images/back_tablets.jpg"); }
+
+  .mainContainer .logo {
+    margin-top: 150px; }
+  .mainContainer .wrapper {
+    left: 50%;
+    padding: 0;
+    bottom: 80px; }
+  .mainContainer .form {
+    margin-left: -50%;
+    max-width: 350px; } }
 @media (min-width: 1200px) {
   body {
-    background-image: url("../../images/back_desktop.jpg"); } }
+    background-image: url("../../images/back_desktop.jpg"); }
+
+  .mainContainer .form input {
+    margin: 10px 0; } }
 
 /*# sourceMappingURL=style.css.map */
