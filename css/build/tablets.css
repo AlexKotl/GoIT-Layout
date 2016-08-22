@@ -1,0 +1,14 @@
+body {
+  background-image: url("../../images/back_tablets.jpg"); }
+
+.main-container .logo {
+  margin-top: 150px; }
+.main-container .wrapper {
+  bottom: 80px;
+  left: 50%;
+  padding: 0; }
+.main-container .form {
+  margin-left: -50%;
+  max-width: 350px; }
+
+/*# sourceMappingURL=tablets.css.map */

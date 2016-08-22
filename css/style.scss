@@ -1,0 +1,114 @@
+$color_white: #fff;
+$color_orange: #f96332;
+$color_orange_light: #f9762e;
+
+@font-face {
+	font-family: Montserrat;
+	font-weight: normal;
+	src: url("../../fonts/Montserrat-Light.otf");
+}
+
+@font-face {
+	font-family: Montserrat;
+	font-weight: bold;
+	src: url("../../fonts/Montserrat-Regular.otf");
+}
+
+body {
+	background-image: url("../../images/back_mobile.jpg");
+	background-size: cover;
+	font-family: Montserrat;
+}
+
+.main-container {
+	text-align: center;
+
+	.logo {
+		background-image: url("../../images/logo.png");
+		background-size: 100% 100%;
+		display: inline-block;
+		height: 115px;
+		margin-top: 27%;
+		width: 112px;
+}
+
+	.rounded {
+		border-radius: 28px;
+}
+
+	.wrapper {
+		bottom: 10px;
+		left: 0;
+		padding: 0 12px;
+		position: absolute;
+}
+
+	.form {
+		width: 100%;
+
+		input {
+			@extend .rounded;
+
+			border: 0;
+			height: 55px;
+			line-height: 55px;
+			box-sizing: border-box;
+			width: 100%;
+			color: $color_white;
+			margin: 7px 0;
+			font-size: 11pt;
+			padding: 0 15px;
+
+			&[type=text], &[type=password] {
+				background-color: rgba(255, 255, 255, 0.22);
+				background-image: url("../../images/icon_login.png");
+				background-size: 26px 26px;
+				background-position: 18px 15px;
+				background-repeat: no-repeat;
+				padding-left: 60px;
+
+				&::-webkit-input-placeholder {
+					color: $color_white;
+			}
+		}
+
+			&[type=submit] {
+				background-color: $color_orange;
+				font-weight: bold;
+				cursor: pointer;
+
+				&:hover {
+					background-color: $color_orange_light;
+			}
+		}
+	}
+
+		a {
+			color: $color_white;
+			font-size: 9pt;
+			opacity: 0.5;
+			margin-top: 18px;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+		}
+
+			&.help {
+				float: right;
+		}
+
+			&.register {
+				float: left;
+		}
+	}
+}
+}
+
+@media (min-width: 700px) {
+@import "tablets";
+}
+
+@media (min-width: 1200px) {
+@import "desktops";
+}

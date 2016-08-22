@@ -11,80 +11,80 @@ body {
   background-size: cover;
   font-family: Montserrat; }
 
-.mainContainer {
+.main-container {
   text-align: center; }
-  .mainContainer .logo {
-    display: inline-block;
-    width: 112px;
-    height: 115px;
+  .main-container .logo {
     background-image: url("../../images/logo.png");
     background-size: 100% 100%;
-    margin-top: 27%; }
-  .mainContainer .rounded, .mainContainer .form input {
+    display: inline-block;
+    height: 115px;
+    margin-top: 27%;
+    width: 112px; }
+  .main-container .rounded, .main-container .form input {
     border-radius: 28px; }
-  .mainContainer .wrapper {
-    position: absolute;
+  .main-container .wrapper {
     bottom: 10px;
     left: 0;
-    padding: 0 12px; }
-  .mainContainer .form {
+    padding: 0 12px;
+    position: absolute; }
+  .main-container .form {
     width: 100%; }
-    .mainContainer .form input {
+    .main-container .form input {
       border: 0;
       height: 55px;
       line-height: 55px;
       box-sizing: border-box;
       width: 100%;
-      color: white;
+      color: #fff;
       margin: 7px 0;
       font-size: 11pt;
       padding: 0 15px; }
-      .mainContainer .form input[type=text], .mainContainer .form input[type=password] {
+      .main-container .form input[type=text], .main-container .form input[type=password] {
         background-color: rgba(255, 255, 255, 0.22);
         background-image: url("../../images/icon_login.png");
         background-size: 26px 26px;
         background-position: 18px 15px;
         background-repeat: no-repeat;
         padding-left: 60px; }
-        .mainContainer .form input[type=text]::-webkit-input-placeholder, .mainContainer .form input[type=password]::-webkit-input-placeholder {
-          color: white; }
-      .mainContainer .form input[type=submit] {
+        .main-container .form input[type=text]::-webkit-input-placeholder, .main-container .form input[type=password]::-webkit-input-placeholder {
+          color: #fff; }
+      .main-container .form input[type=submit] {
         background-color: #f96332;
         font-weight: bold;
         cursor: pointer; }
-        .mainContainer .form input[type=submit]:hover {
+        .main-container .form input[type=submit]:hover {
           background-color: #f9762e; }
-    .mainContainer .form a {
-      color: white;
-      opacity: 0.5;
+    .main-container .form a {
+      color: #fff;
       font-size: 9pt;
-      text-decoration: none;
-      margin-top: 18px; }
-      .mainContainer .form a:hover {
+      opacity: 0.5;
+      margin-top: 18px;
+      text-decoration: none; }
+      .main-container .form a:hover {
         text-decoration: underline; }
-      .mainContainer .form a.help {
+      .main-container .form a.help {
         float: right; }
-      .mainContainer .form a.register {
+      .main-container .form a.register {
         float: left; }
 
 @media (min-width: 700px) {
   body {
     background-image: url("../../images/back_tablets.jpg"); }
 
-  .mainContainer .logo {
+  .main-container .logo {
     margin-top: 150px; }
-  .mainContainer .wrapper {
+  .main-container .wrapper {
+    bottom: 80px;
     left: 50%;
-    padding: 0;
-    bottom: 80px; }
-  .mainContainer .form {
+    padding: 0; }
+  .main-container .form {
     margin-left: -50%;
     max-width: 350px; } }
 @media (min-width: 1200px) {
   body {
     background-image: url("../../images/back_desktop.jpg"); }
 
-  .mainContainer .form input {
+  .main-container .form input {
     margin: 10px 0; } }
 
 /*# sourceMappingURL=style.css.map */
