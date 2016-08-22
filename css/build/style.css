@@ -1,6 +1,15 @@
+@font-face {
+  font-family: Montserrat;
+  font-weight: normal;
+  src: url("../../fonts/Montserrat-Light.otf"); }
+@font-face {
+  font-family: Montserrat;
+  font-weight: bold;
+  src: url("../../fonts/Montserrat-Regular.otf"); }
 body {
   background-image: url("../../images/back_mobile.jpg");
-  background-size: cover; }
+  background-size: cover;
+  font-family: Montserrat; }
 
 .mainContainer {
   padding: 20px; }
@@ -9,8 +18,29 @@ body {
   .mainContainer .rounded, .mainContainer .form input {
     border-radius: 1em; }
   .mainContainer .form input {
+    border: 0;
+    height: 40px;
+    line-height: 40px;
     box-sizing: border-box;
-    width: 100%; }
+    width: 100%;
+    color: white;
+    margin: 5px 0;
+    font-size: 13pt;
+    padding: 0 15px; }
+    .mainContainer .form input[type=text], .mainContainer .form input[type=password] {
+      background-color: rgba(255, 255, 255, 0.22); }
+      .mainContainer .form input[type=text]::-webkit-input-placeholder, .mainContainer .form input[type=password]::-webkit-input-placeholder {
+        color: white; }
+    .mainContainer .form input[type=submit] {
+      background-color: #f96332;
+      font-weight: bold; }
+  .mainContainer .form a {
+    color: white;
+    opacity: 0.5;
+    font-size: 11pt;
+    text-decoration: none; }
+    .mainContainer .form a.help {
+      float: right; }
 
 @media (min-width: 700px) {
   body {
