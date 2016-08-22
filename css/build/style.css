@@ -50,13 +50,18 @@ body {
           color: white; }
       .mainContainer .form input[type=submit] {
         background-color: #f96332;
-        font-weight: bold; }
+        font-weight: bold;
+        cursor: pointer; }
+        .mainContainer .form input[type=submit]:hover {
+          background-color: #f9762e; }
     .mainContainer .form a {
       color: white;
       opacity: 0.5;
       font-size: 9pt;
       text-decoration: none;
       margin-top: 18px; }
+      .mainContainer .form a:hover {
+        text-decoration: underline; }
       .mainContainer .form a.help {
         float: right; }
       .mainContainer .form a.register {
