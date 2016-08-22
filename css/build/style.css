@@ -12,9 +12,14 @@ body {
   font-family: Montserrat; }
 
 .mainContainer {
-  padding: 20px; }
+  padding: 20px;
+  text-align: center; }
   .mainContainer .logo {
-    display: inline-block; }
+    display: inline-block;
+    width: 112px;
+    height: 115px;
+    background-image: url("../../images/logo.png");
+    background-size: 100% 100%; }
   .mainContainer .rounded, .mainContainer .form input {
     border-radius: 1em; }
   .mainContainer .form input {
@@ -41,6 +46,8 @@ body {
     text-decoration: none; }
     .mainContainer .form a.help {
       float: right; }
+    .mainContainer .form a.register {
+      float: left; }
 
 @media (min-width: 700px) {
   body {
