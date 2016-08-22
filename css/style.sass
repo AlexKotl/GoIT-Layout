@@ -27,25 +27,30 @@ body
 		background-size: 100% 100%
 
 	.rounded
-		border-radius: 1em
+		border-radius: 28px
 
 	.form
 
 		input
 			@extend .rounded
 			border: 0
-			height: 40px
-			line-height: 40px
+			height: 55px
+			line-height: 55px
 			box-sizing: border-box
 			width: 100%
 			color: white
-			margin: 5px 0
+			margin: 7px 0
 			font-size: 13pt
 			padding: 0 15px
 
 
 			&[type=text], &[type=password]
 				background-color: rgba(255, 255, 255, 0.22)
+				background-image: url('../../images/icon_login.png')
+				background-size: 26px 26px
+				background-position: 18px 15px
+				background-repeat: no-repeat
+				padding-left: 60px
 
 				&::-webkit-input-placeholder
 					color: white

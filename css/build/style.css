@@ -21,19 +21,24 @@ body {
     background-image: url("../../images/logo.png");
     background-size: 100% 100%; }
   .mainContainer .rounded, .mainContainer .form input {
-    border-radius: 1em; }
+    border-radius: 28px; }
   .mainContainer .form input {
     border: 0;
-    height: 40px;
-    line-height: 40px;
+    height: 55px;
+    line-height: 55px;
     box-sizing: border-box;
     width: 100%;
     color: white;
-    margin: 5px 0;
+    margin: 7px 0;
     font-size: 13pt;
     padding: 0 15px; }
     .mainContainer .form input[type=text], .mainContainer .form input[type=password] {
-      background-color: rgba(255, 255, 255, 0.22); }
+      background-color: rgba(255, 255, 255, 0.22);
+      background-image: url("../../images/icon_login.png");
+      background-size: 26px 26px;
+      background-position: 18px 15px;
+      background-repeat: no-repeat;
+      padding-left: 60px; }
       .mainContainer .form input[type=text]::-webkit-input-placeholder, .mainContainer .form input[type=password]::-webkit-input-placeholder {
         color: white; }
     .mainContainer .form input[type=submit] {
