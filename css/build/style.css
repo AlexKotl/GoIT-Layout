@@ -20,52 +20,53 @@ body {
     height: 115px;
     margin-top: 27%;
     width: 112px; }
-  .main-container .rounded, .main-container .form input {
+  .main-container .form input, .form .main-container input {
     border-radius: 28px; }
   .main-container .wrapper {
     bottom: 10px;
     left: 0;
     padding: 0 12px;
     position: absolute; }
-  .main-container .form {
+
+.form {
+  width: 100%; }
+  .form input {
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 11pt;
+    height: 55px;
+    line-height: 55px;
+    margin: 7px 0;
+    padding: 0 15px;
     width: 100%; }
-    .main-container .form input {
-      border: 0;
-      height: 55px;
-      line-height: 55px;
-      box-sizing: border-box;
-      width: 100%;
-      color: #fff;
-      margin: 7px 0;
-      font-size: 11pt;
-      padding: 0 15px; }
-      .main-container .form input[type=text], .main-container .form input[type=password] {
-        background-color: rgba(255, 255, 255, 0.22);
-        background-image: url("../../images/icon_login.png");
-        background-size: 26px 26px;
-        background-position: 18px 15px;
-        background-repeat: no-repeat;
-        padding-left: 60px; }
-        .main-container .form input[type=text]::-webkit-input-placeholder, .main-container .form input[type=password]::-webkit-input-placeholder {
-          color: #fff; }
-      .main-container .form input[type=submit] {
-        background-color: #f96332;
-        font-weight: bold;
-        cursor: pointer; }
-        .main-container .form input[type=submit]:hover {
-          background-color: #f9762e; }
-    .main-container .form a {
-      color: #fff;
-      font-size: 9pt;
-      opacity: 0.5;
-      margin-top: 18px;
-      text-decoration: none; }
-      .main-container .form a:hover {
-        text-decoration: underline; }
-      .main-container .form a.help {
-        float: right; }
-      .main-container .form a.register {
-        float: left; }
+    .form input[type=text], .form input[type=password] {
+      background-color: rgba(255, 255, 255, 0.22);
+      background-image: url("../../images/icon_login.png");
+      background-position: 18px 15px;
+      background-repeat: no-repeat;
+      background-size: 26px 26px;
+      padding-left: 60px; }
+    .form input::-webkit-input-placeholder {
+      color: #fff; }
+    .form input[type=submit] {
+      background-color: #f96332;
+      cursor: pointer;
+      font-weight: bold; }
+    .form input[type=submit]:hover {
+      background-color: #f9762e; }
+  .form a {
+    color: #fff;
+    font-size: 9pt;
+    margin-top: 18px;
+    opacity: .5;
+    text-decoration: none; }
+    .form a:hover {
+      text-decoration: underline; }
+    .form a.help {
+      float: right; }
+    .form a.register {
+      float: left; }
 
 @media (min-width: 700px) {
   body {
